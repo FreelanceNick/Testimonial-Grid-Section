@@ -1,0 +1,47 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.name {
+    font-size: 0.8125rem;
+    line-height: 1em;
+
+    color: var(--white);
+}
+
+.status {
+    font-size: 0.6875rem;
+    color: var(--lightGray);
+}
+
+.highlight {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.quote {
+    font-size: 0.8125rem;
+    line-height: 1.385em;
+}
+
+.one {
+
+    .highlight {
+        margin-bottom: 1rem;
+    }
+
+    .quote {
+        color: var(--lightGray);
+    }
+}
+
+.five {
+    .name {
+        color: var(--darkGreyishBlue);
+    }
+
+    .highlight {
+        margin-bottom: 1.5rem;
+    }
+}

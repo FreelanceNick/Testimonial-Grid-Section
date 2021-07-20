@@ -1,0 +1,59 @@
+// Card Specific Styles
+.card {
+    border-radius: .5rem;
+    padding: 1.625rem 2rem;
+
+}
+
+.highlight {
+    margin-bottom: 1rem;
+}
+
+/* Card Layout -- START */
+.one {
+    background: var(--mediumViolet);
+
+    margin-bottom: 2.5rem;
+    
+    @media (min-width: 40em) {
+        .highlight {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.two {
+    background: var(--darkGreyishBlue);
+}
+
+.three {
+    background: var(--white);
+}
+
+.four {
+    background: var(--darkBlackishBlue);
+}
+
+.five {
+    background: var(--white);
+}
+
+// HEADER
+.header {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1.125rem;
+}
+
+.photo {
+    width: 1.75rem;
+
+    border-radius: 50%;
+}
+
+.highlight {
+    margin-bottom: 1rem;
+}

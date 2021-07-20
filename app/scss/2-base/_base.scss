@@ -1,0 +1,19 @@
+body {
+    max-width: 100%;
+    min-height: 100vh;
+
+    background: var(--lightGreyishBlue);
+
+    padding: 4.4375rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}   
+
+.wrapper {
+    max-width: 20.4375rem; 
+
+}

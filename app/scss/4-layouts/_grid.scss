@@ -1,0 +1,53 @@
+.wrapper {
+    max-width: 69.375em;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5";
+
+    grid-gap: 1.5rem;
+
+}
+
+.one {
+    grid-area: c1;
+}
+
+.two {
+    grid-area: c2;
+}
+
+.three {
+    grid-area: c3;
+}
+
+.four {
+    grid-area: c4;
+}
+
+.five {
+    grid-area: c5;
+}
+
+// Tablets
+@media (min-width: 40em) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "c1 c1 c3" "c2 c4 c4" "c5 c5 c5";
+    }
+}
+
+@media (min-width: 60em) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "c1 c1 c2 c5" 
+                             "c3 c4 c4 c5";
+    }
+}
