@@ -86,7 +86,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background: var(--lightGreyishBlue);
-  padding: 4.437rem 1.5rem 0;
+  padding: 4.437rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
 }
 @media (min-width: 40em) {
   body {
-    padding: 4.437rem 2rem;
+    padding: 4.437rem 2rem 1rem;
   }
 }
 
