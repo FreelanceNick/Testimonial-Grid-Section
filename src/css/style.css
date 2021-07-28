@@ -86,15 +86,25 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background: var(--lightGreyishBlue);
-  padding: 4.4375rem 2rem;
+  padding: 4.437rem 1.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 40em) {
+  body {
+    padding: 4.437rem 2rem;
+  }
+}
 
 .wrapper {
   max-width: 20.4375rem;
+  margin-bottom: auto;
+}
+
+.attribution {
+  margin-top: auto;
 }
 
 body {
@@ -102,36 +112,43 @@ body {
 }
 
 .name {
-  font-size: 0.8125rem;
-  line-height: 1em;
   color: var(--white);
+  font-size: 0.8125rem;
 }
 
 .status {
-  font-size: 0.6875rem;
-  color: var(--lightGray);
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 0.8125rem;
 }
 
 .highlight {
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: var(--white);
+  font-size: 1.125rem;
 }
 
 .quote {
+  color: var(--white);
+  opacity: 0.7;
   font-size: 0.8125rem;
-  line-height: 1.385em;
+  line-height: 1.384em;
 }
 
 .one .highlight {
   margin-bottom: 1rem;
 }
-.one .quote {
-  color: var(--lightGray);
-}
 
-.five .name {
+.three .name,
+.three .status,
+.three .highlight,
+.three .quote,
+.five .name,
+.five .status,
+.five .highlight,
+.five .quote {
   color: var(--darkGreyishBlue);
 }
+
 .five .highlight {
   margin-bottom: 1.5rem;
 }
@@ -148,7 +165,6 @@ body {
 /* Card Layout -- START */
 .one {
   background: var(--mediumViolet);
-  margin-bottom: 2.5rem;
 }
 @media (min-width: 40em) {
   .one .highlight {
@@ -175,12 +191,12 @@ body {
 .header {
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin-bottom: 1.125rem;
 }
 
 .photo {
   width: 1.75rem;
+  margin-right: 1rem;
   border-radius: 50%;
 }
 
@@ -195,6 +211,20 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: "c1" "c2" "c3" "c4" "c5";
   grid-gap: 1.5rem;
+}
+@media (min-width: 40em) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "c1 c1 c3" "c2 c4 c4" "c5 c5 c5";
+  }
+}
+@media (min-width: 60em) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c1 c2 c5" "c3 c4 c4 c5";
+  }
 }
 
 .one {
@@ -215,21 +245,6 @@ body {
 
 .five {
   grid-area: c5;
-}
-
-@media (min-width: 40em) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "c1 c1 c3" "c2 c4 c4" "c5 c5 c5";
-  }
-}
-@media (min-width: 60em) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "c1 c1 c2 c5" "c3 c4 c4 c5";
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

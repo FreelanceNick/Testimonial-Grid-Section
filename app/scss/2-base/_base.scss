@@ -4,16 +4,25 @@ body {
 
     background: var(--lightGreyishBlue);
 
-    padding: 4.4375rem 2rem;
+    padding: 4.437rem 1.5rem 0;
 
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
+
+
+    @media (min-width: 40em) {
+        padding: 4.437rem 2rem;
+    }
 }   
 
 .wrapper {
     max-width: 20.4375rem; 
+    margin-bottom: auto;
+}
 
+.attribution {
+    margin-top: auto;
 }
