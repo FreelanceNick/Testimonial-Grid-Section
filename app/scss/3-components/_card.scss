@@ -3,6 +3,9 @@
     border-radius: .5rem;
     padding: 1.625rem 2rem;
 
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
+
 }
 
 .highlight {
@@ -12,7 +15,7 @@
 /* Card Layout -- START */
 .one {
     background: var(--mediumViolet);
-    
+
     @media (min-width: 40em) {
         .highlight {
             margin-bottom: 1rem;
