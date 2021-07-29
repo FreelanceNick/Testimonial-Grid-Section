@@ -14,14 +14,23 @@
 
 /* Card Layout -- START */
 .one {
+    position: relative;
     background: var(--mediumViolet);
+
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: right 1.5rem top; // Learned that I can add numbers too to finely tune position
+    background-repeat: no-repeat;
 
     @media (min-width: 40em) {
         .highlight {
             margin-bottom: 1rem;
         }
+
+        background-position: right 5rem top;
     }
 }
+
+
 
 .two {
     background: var(--darkGreyishBlue);

@@ -166,9 +166,16 @@ body {
 
 /* Card Layout -- START */
 .one {
+  position: relative;
   background: var(--mediumViolet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: right 1.5rem top;
+  background-repeat: no-repeat;
 }
 @media (min-width: 40em) {
+  .one {
+    background-position: right 5rem top;
+  }
   .one .highlight {
     margin-bottom: 1rem;
   }
